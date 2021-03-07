@@ -1,0 +1,142 @@
+﻿
+@model MovieStore.Entities.Movie
+<row class="text-center">
+    <div class="col-md-12">
+        <h1>EDIT MOVIE</h1>
+    </div>
+    <div>
+        <hr />
+    </div>
+</row>
+<div class="row">
+    <div class="col-md-12 ">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Title" class="control-label">Title</label>
+                    <input class="form-control" type="text" asp-for="Title" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="ProducerName" class="control-label">ProducerName</label>
+                    <input class="form-control" type="text" asp-for="ProducerName" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label asp-for="ProducerId" class="control-label">ProducerId</label>
+                    <select class="form-control" asp-for="ProducerId" asp-items="ViewBag.AuthorId"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="YearofIssue">YearOfIssue</label>
+                    <input asp-for="YearofIssue" type="date" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="LengthOfMovie">LengthOfMovie</label>
+                    <input asp-for="LengthOfMovie" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="ProductionName">ProductionName</label>
+                    <input asp-for="ProductionName" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="ProductionId">ProductionId</label>
+                    <select asp-for="ProductionId" asp-items="ViewBag.PublisherID" class="form-control"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="UserId">UserId</label>
+                    <input asp-for="UserId" class="form-control" type="text" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Genre">Genre</label>
+                    <input asp-for="Genre" class="form-control" type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="CategoryName">CategoryName</label>
+                    <input asp-for="CategoryName" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="CategoryId">CategoryId</label>
+                    <select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-control"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="Price">Price</label>
+                    <input asp-for="Price" type="text" class="form-control" />
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="MovieType">MovieType</label>
+                    <input asp-for="MovieType" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label asp-for="Description">Description</label>
+                    <input asp-for="Description" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Language">Language</label>
+                    <input asp-for="Language" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Country">Country</label>
+                    <input asp-for="Country" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Edition">Edition</label>
+                    <input asp-for="Edition" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Dimension">Dimension</label>
+                    <input asp-for="Dimension" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Shipping">Shipping</label>
+                    <input asp-for="Shipping" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="SoldItems">SoldItems</label>
+                    <input asp-for="SoldItems" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label asp-for="PhotoURL">PhotoURL</label>
+                    <input asp-for="PhotoURL" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Rating">Rating</label>
+                    <input asp-for="Rating" type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="DateAdded">DateAdded</label>
+                    <input asp-for="DateAdded" type="date" class="form-control" />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <button class="btn btn-primary btn-block">Create</button>
+                </div>
+            </div>
+            <a class="mt-2" href="">Back to List</a>
+        </form>
+    </div>
+</div>
+

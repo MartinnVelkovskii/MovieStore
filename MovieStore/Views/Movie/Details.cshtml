@@ -1,0 +1,111 @@
+﻿@model MovieStore.Entities.Movie
+
+<row class="text-center">
+    <div class="col-md-12">
+        <h1>Details</h1>
+    </div>
+    <div>
+        <hr />
+    </div>
+</row>
+<div class="row">
+    <div class="col-12">
+        <table>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Title)</th>
+                <td>@Html.DisplayFor(model => model.Title)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ProducerName)</th>
+                <td>@Html.DisplayFor(model => model.ProducerName)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Producer)</th>
+                <td>@Html.DisplayFor(model => model.Producer)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ProducerId)</th>
+                <td>@Html.DisplayFor(model => model.ProducerId)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.YearofIssue)</th>
+                <td>@Html.DisplayFor(model => model.YearofIssue)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.LengthOfMovie)</th>
+                <td>@Html.DisplayFor(model => model.LengthOfMovie)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ProductionName)</th>
+                <td>@Html.DisplayFor(model => model.ProductionName)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Production)</th>
+                <td>@Html.DisplayFor(model => model.Production)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ProductionId)</th>
+                <td>@Html.DisplayFor(model => model.ProductionId)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Genre)</th>
+                <td>@Html.DisplayFor(model => model.Genre)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Category)</th>
+                <td>@Html.DisplayFor(model => model.Category)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.CategoryId)</th>
+                <td>@Html.DisplayFor(model => model.CategoryId)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Price)</th>
+                <td>@Html.DisplayFor(model => model.Price)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MovieType)</th>
+                <td>@Html.DisplayFor(model => model.MovieType)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Description)</th>
+                <td>@Html.DisplayFor(model => model.Description)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Language)</th>
+                <td>@Html.DisplayFor(model => model.Language)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Country)</th>
+                <td>@Html.DisplayFor(model => model.Country)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Edition)</th>
+                <td>@Html.DisplayFor(model => model.Edition)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Dimension)</th>
+                <td>@Html.DisplayFor(model => model.Dimension)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Shipping)</th>
+                <td>@Html.DisplayFor(model => model.Shipping)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.PhotoURL)</th>
+                <td>@Html.DisplayFor(model => model.PhotoURL)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.SoldItems)</th>
+                <td>@Html.DisplayFor(model => model.SoldItems)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Rating)</th>
+                <td>@Html.DisplayFor(model => model.Rating)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12 mt-2">
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
